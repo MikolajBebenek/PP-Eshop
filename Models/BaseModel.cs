@@ -7,6 +7,6 @@
         public Guid CreatedBy { get; set; }
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
         public Guid UpdatedBy { get; set; }
-        public Guid? Uptaded { get; set; }    
+        public Guid? Updated { get; set; }   
 }
 }

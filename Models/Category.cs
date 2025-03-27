@@ -1,8 +1,8 @@
 ﻿namespace EShopService.Models
 {
-    public class Category
+    public class Category : BaseModel
     {
-        public int id { get; set; }
-        public string Name { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; } = default!;
     }
 }
