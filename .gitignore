@@ -1,0 +1,15 @@
+# Ignore Visual Studio files
+.vs/
+*.user
+*.suo
+
+# Ignore build output
+bin/
+obj/
+
+# Ignore temporary files
+*.tmp
+*.log
+
+# Ignore secrets or configs (jeœli nie chcesz wrzucaæ)
+appsettings.Development.json
