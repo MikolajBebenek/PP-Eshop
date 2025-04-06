@@ -1,16 +1,18 @@
 ﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
-namespace EShopService.Models
+namespace EShop.Domain.Models
 {
     public class Product : BaseModel
     {
-        public int Id { get; set; }
+        [Required]
         public string Name { get; set; } = default!;
         public string Ean { get; set; } = default!;
         public decimal Price { get; set; }
         public int Stock { get; set; } = 0;
         public string Sku { get; set; } = default!;
-        public Category Category { get; set; }
+        public int CategoryId { get; set; }
+        public Category Category { get; set; } = default!;
 
     }
 

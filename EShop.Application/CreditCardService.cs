@@ -4,7 +4,8 @@ using EShop.Domain.Exceptions;
 
 namespace EShop.Application
 {
-    public class CreditCardService
+    public class CreditCardService : ICreditCardService
+
     {
         public bool ValidateCard(string cardNumber)
         {
